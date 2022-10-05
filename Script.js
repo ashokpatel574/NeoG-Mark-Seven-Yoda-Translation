@@ -32,7 +32,7 @@
       const data = await response.json();
 
       // to display fetched data in display section box
-      displayText.innerText = data.contents.translatd;
+      displayText.innerText = data.contents.translated;
     } catch (error) {
       alert(
         `Something went wrong!! 💥💥 ${error.status || ""} ${
