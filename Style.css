@@ -1,0 +1,186 @@
+/* Initial setup */
+
+:root {
+  --primary-one-color: #541b15;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+/* General style Section */
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  color: var(--primary-one-color);
+  min-height: 100vh;
+}
+
+img {
+  display: inline-block;
+  width: 100%;
+}
+
+button:focus,
+textarea:focus {
+  outline: none;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.header,
+.footer,
+.btn-translate {
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(2, 143, 118, 1) 0%,
+    rgba(178, 224, 153, 1) 90%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(2, 143, 118, 1) 0%,
+    rgba(178, 224, 153, 1) 90%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(2, 143, 118, 1) 0%,
+    rgba(178, 224, 153, 1) 90%
+  );
+}
+
+textarea {
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+  resize: none;
+  border: 1px sloid #ddd;
+  min-height: 15rem;
+  padding: 2rem;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  overflow-y: auto;
+}
+
+textarea::placeholder:first-child {
+  opacity: 0.6;
+}
+
+/* header Style Section */
+
+.heading {
+  font-size: 3.6rem;
+  padding: 2rem 4rem;
+  font-weight: 600;
+  word-spacing: 1rem;
+}
+
+/* Main Style Section */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 4rem 6rem;
+}
+
+button,
+.translate-text {
+  margin-right: auto;
+}
+
+.btn-translate {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  color: #541b15;
+  font-size: 2.4rem;
+  transition: all 0.3s ease-in;
+}
+
+.btn-translate:hover {
+  transform: scale(1.05);
+}
+
+.translate-text {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.yoda-img {
+  max-width: 6rem;
+}
+
+.emoji {
+  display: inline-block;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+/* Footer Style Section */
+
+.footer {
+  padding: 2rem 6rem;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.text {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: 1.25px;
+}
+
+small {
+  font-size: 1.4rem;
+}
+
+/* Media Query Section */
+
+/*  544px = 34rem */
+@media (max-width: 34rem) {
+  .heading {
+    font-size: 3.4rem;
+    word-spacing: 0.25rem;
+  }
+
+  .main-container {
+    padding: 2rem 3rem;
+  }
+
+  .footer {
+    padding: 2rem 3rem;
+  }
+}
+
+/* 432px = 27rem */
+
+@media (max-width: 27em) {
+  html {
+    /* 9.5px / 16px  */
+    font-size: 59.375%;
+  }
+}

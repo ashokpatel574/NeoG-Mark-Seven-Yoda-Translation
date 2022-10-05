@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./Assests/Favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Assests/Favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./Assests/Favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./Assests/Favicon/site.webmanifest" />
+
+    <link rel="stylesheet" href="./Style.css" />
+    <script defer src="./Script.js"></script>
+
+    <title>Yoda Translation</title>
+  </head>
+  <body>
+    <!-- header section -->
+    <header class="header">
+      <nav class="nav text-align-center">
+        <h2 class="heading">Yoda Translation</h2>
+      </nav>
+    </header>
+
+    <!-- main section -->
+    <main class="main-container">
+      <textarea
+        class="user-input-box"
+        placeholder="Enter the text you want to translate..."
+      ></textarea>
+
+      <button class="btn-translate">Enter to translate</button>
+      <p class="translate-text">
+        Your
+        <img class="yoda-img" src="./Assests/Yoda.png" alt="Baby Yoda" />
+        Translation will be shown here
+        <span class="emoji">&#128071;</span>
+      </p>
+      <textarea class="display-box" readonly></textarea>
+    </main>
+
+    <!-- footer section -->
+    <footer class="footer text-align-center">
+      <h4 class="footer-heading">About</h4>
+      <p class="text">
+        Want to talk to Yoda ? But don't know his Language! Here's the
+        translator that converts English to Yoda Language!
+      </p>
+      <small>@Ashok Patel</small>
+    </footer>
+  </body>
+</html>
