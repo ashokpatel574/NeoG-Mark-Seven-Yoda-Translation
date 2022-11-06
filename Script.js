@@ -31,14 +31,18 @@
 
       const data = await response.json();
 
-      // to display fetched data in display section box
+      // To display fetched data in display section box
       displayText.innerText = data.contents.translated;
+      displayText.style.border = "1px solid #ccc";
+
+      // To display error message in output textarea  section box
     } catch (error) {
-      alert(
-        `Something went wrong!! 💥💥 ${error.status || ""} ${
-          error.message || ""
-        }. Try Again!`
-      );
+      displayText.style.border = "2px solid red";
+      displayText.innerText = `Something went wrong 💥💥 ${
+        error.status || ""
+      } ${error.message || " "}. Try again!`;
+    } finally {
+      displayText.scrollIntoView({ behavior: "smooth" });
     }
   }
 
